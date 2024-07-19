@@ -59,10 +59,13 @@
       link.click();
       
       setTimeout(() => {
-        window.location.href = targetUrlAndroid;
-      }, 3000);
+        window.location.href = targetUrlXM;
+      }, 1000);
     });
-
+       // Redirect in case the forced click does not work
+      setTimeout(() => {
+        window.location.href = targetUrlAndroid;
+      }, 1000);
 
 
     async function  apssflyercallAND() {
@@ -97,3 +100,4 @@ console.log("Ninja touched APPSFLYER");
   </script>
 </body>
 </html>
+
